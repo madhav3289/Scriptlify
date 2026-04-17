@@ -12,6 +12,17 @@ const exportsRouter = require("./routes/exports.route");
 
 const app = express();
 
+// Vercel strips the /api routePrefix before passing requests to this service.
+// Re-add it so all route handlers work consistently in production.
+if (ENV.NODE_ENV === "production") {
+  app.use((req, _res, next) => {
+    if (!req.url.startsWith("/api")) {
+      req.url = "/api" + req.url;
+    }
+    next();
+  });
+}
+
 // Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // for form data
