@@ -1,29 +1,29 @@
 import { useAuthContext } from "../../contexts/AuthContext";
-import { Globe } from "lucide-react";
+import { Mail } from "lucide-react";
 import { Link } from "react-router";
 import LogoIcon from "../LogoIcon";
 
 const socials = [
   {
-    href: "https://math-to-dev.vercel.app/",
-    ariaLabel: "Visit my portfolio",
-    icon: Globe,
+    href: "mailto:madhavguptadavfps1234@gmail.com",
+    ariaLabel: "Send me an email",
+    icon: Mail,
     imgSrc: "",
   },
   {
-    href: "https://github.com/KeepSerene",
+    href: "https://github.com/madhav3289",
     ariaLabel: "Visit my GitHub",
     icon: null,
     imgSrc: "/social-icons/github.svg",
   },
   {
-    href: "https://www.linkedin.com/in/dhrubajyoti-bhattacharjee-320822318/",
+    href: "https://linkedin.com/in/madhav-gupta-032b03354",
     ariaLabel: "Visit my LinkedIn",
     icon: null,
     imgSrc: "/social-icons/linkedin.svg",
   },
   {
-    href: "https://x.com/UsualLearner",
+    href: "https://x.com/madhavgfr",
     ariaLabel: "Visit my X (formerly Twitter) page",
     icon: null,
     imgSrc: "/social-icons/x.svg",
@@ -142,11 +142,11 @@ function Footer() {
               <span>
                 by{" "}
                 <a
-                  href="https://github.com/KeepSerene"
+                  href="https://github.com/madhav3289"
                   target="_blank"
                   className="text-white transition-all duration-200 hover:underline focus-visible:underline"
                 >
-                  @KeepSerene
+                  @madhav3289
                 </a>
                 , for creators
               </span>
