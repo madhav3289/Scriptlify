@@ -1,0 +1,21 @@
+{
+  "name": "scriptlify",
+  "version": "1.0.0",
+  "description": "AI-powered eBook creation platform",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "ebook",
+    "ai",
+    "publishing",
+    "mern"
+  ],
+  "author": "Dhrubajyoti Bhattacharjee",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
