@@ -77,3 +77,5 @@ tmp/
 
 # Claude Code
 .claude/
+
+.vercel
