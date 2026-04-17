@@ -81,30 +81,6 @@ Scriptlify is a full-stack MERN application that revolutionizes the eBook creati
 
 ---
 
-## 📸 Screenshots
-
-### Landing Page
-
-![Landing Page](./frontend/public/screenshots/landing-page.png)
-_Beautiful, modern landing page with gradient designs and smooth animations_
-
-### Dashboard
-
-![Dashboard](./frontend/public/screenshots/dashboard.png)
-_Manage all your books in one place with an intuitive card-based layout_
-
-### Book Editor
-
-![Book Editor](./frontend/public/screenshots/editor.png)
-_Rich markdown editor with live preview and AI-powered content generation_
-
-### AI Content Generation
-
-![AI Generation](./frontend/public/screenshots/ai-generation.png)
-_Generate book outlines and chapter content with AI assistance_
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -118,8 +94,8 @@ _Generate book outlines and chapter content with AI assistance_
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/scriptlify.git
-cd scriptlify
+git clone https://github.com/madhav3289/Scriptlify.git
+cd Scriptlify
 ```
 
 2. **Install dependencies**
@@ -136,15 +112,21 @@ npm install
 
 3. **Set up environment variables**
 
-Backend (.env in `/backend`):
+Backend (`.env` in `/backend`):
 
 ```env
 NODE_ENV=development
-PORT=5000
+PORT=3000
 MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_super_secret_jwt_key
+JWT_SECRET_KEY=your_super_secret_jwt_key
 GEMINI_API_KEY=your_gemini_api_key
 CLIENT_URL=http://localhost:5173
+```
+
+Frontend (`.env` in `/frontend`):
+
+```env
+VITE_API_BASE_URL=http://localhost:3000
 ```
 
 4. **Run the application**
@@ -164,16 +146,10 @@ npm run dev
 
 ---
 
-## 📁 Project Structure (Tentative!)
+## 📁 Project Structure
 
 ```
-imprintly/
-├── backend/
-│   ├── src/
-│   │   ├── configs/   
-
-```
-scriptlify/
+Scriptlify/
 ├── backend/
 │   ├── src/
 │   │   ├── configs/         # Configuration files (db, env)
@@ -198,6 +174,12 @@ scriptlify/
 │   │   └── main.jsx         # React app entry point
 │   └── package.json
 └── package.json             # Root package with build/start scripts
+```
+
+---
+
+## 🔌 API Endpoints
+
 ### Authentication
 
 - `POST /api/auth/register` - Register new user
@@ -231,17 +213,6 @@ scriptlify/
 
 ---
 
-## 🌐 Deployment
-
-This project is configured for deployment on [Render.com](https://render.com/). The build process automatically:
-
-1. Installs all dependencies using npm
-2. Builds the React frontend
-3. Serves the frontend from the Express backend in production
-4. Handles all routing through React Router
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -261,44 +232,15 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 ---
 
 ## 👨‍💻 Author
-Feel free to fork, modify, and build upon this project!dev.vercel.app/)
-- GitHub: [@KeepSerene](https://github.com/KeepSerene)
-- LinkedIn: [Dhrubajyoti Bhattacharjee](https://www.linkedin.com/in/dhrubajyoti-bhattacharjee-320822318/)
-- Twitter: [@UsualLearner](https://x.com/UsualLearner)
+
+- GitHub: [@madhav3289](https://github.com/madhav3289)
 
 ---
 
-## 🙏 Acknowledgments
-
-- Google Gemini AI for intelligent content generation
-- Lucide React for beautiful icons
-- The React and Node.js communities
-- All contributors and users of Scriptlify
-
----
-
-## 📊 Project Status
-
-This is a portfolio project demonstrating full-stack MERN development skills with modern best practices. The application is fully functional and deployed on Render's free tier.
-
-**Key Highlights:**
-Scriptlify is a fully functional, production-ready MERN application demonstrating modern full-stack development practices.
-
-**Key Highlights:**
-
-- ✅ Clean, scalable code architecture
-- ✅ Secure JWT-based authentication
-- ✅ Google Gemini AI integration for content generation
-- ✅ Responsive design across all devices
-- ✅ Professional document export (PDF & DOCX)
-- ✅ Intuitive drag-and-drop interface
-- ✅ Production-ready
 <div align="center">
-
-**Made with 💜 by @KeepSerene**
 
 ⭐ Star this repo if you found it helpful!
 
-[Live Demo](https://imprintly.onrender.com) • [Report Bug](https://github.com/KeepSerene/imprintly-ai-e-book-creator-mern/issues) • [Request Feature](https://github.com/KeepSerene/imprintly-ai-e-book-creator-mern/issues)
+[Report Bug](https://github.com/madhav3289/Scriptlify/issues) • [Request Feature](https://github.com/madhav3289/Scriptlify/issues)
 
 </div>
